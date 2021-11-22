@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	var number = 0;
+document.addEventListener("keypress", function(event){
+number = number +1
+
+var x = document.createElement("div");
+document.body.appendChild(x)
+x.id = number
+x.style.display="inline-block";
+x.style.width="100px"
+x.style.height="100px"
+x.style.backgroundSize="cover";
+x.style.color = "white"
+x.style.backgroundImage ="url(" + number + ".jpg)";
+
+console.log(number);
+
+if (number%3 ==0) {
+	number = 0;
+
+}
+if (event.key == "2") {
+	x.innerText = "Welcome to Liza's Website!"
+	}
+else if (event.key !=="2"){
+	x.innerText = "Enjoy!"
+
+}
+
+})
+
+</script>
+</body>
+</html>

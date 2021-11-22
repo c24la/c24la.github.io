@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<style type="text/css">
+		
+		#puppy{
+			width: 500px;
+			height: 500px;
+			background-image: url(puppy.png);
+			background-size: contain;
+		}
+
+		#scoreboard{
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+			text-align: center;
+
+
+		}
+
+		#awakepuppy{
+
+
+			width: 500px;
+			height: 500px;
+		background-image: url(awake.png);
+			background-size: contain;
+
+		}
+	</style>
+</head>
+<body>
+
+See how many touches you can get before waking me up!
+
+<div id="puppy">
+	
+	
+</div>
+
+
+<div id="scoreboard">
+	
+
+</div>
+
+<div id="awakepuppy">
+	
+
+
+</div>
+	<script type="text/javascript">
+
+		var s = document.getElementById('scoreboard');
+
+		var dog = document.getElementById('puppy');
+
+		var score = 0;
+
+		s.innerText = score;
+
+		dog.addEventListener("click", function(){ 
+			score = score + 1;
+			s.innerText = score;})
+
+
+
+	</script>
+
+</body>
+</html>

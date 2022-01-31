@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<style type="text/css">
+		
+		.hearts{
+			width: 300px;
+			height: 300px;
+/*			background-color: red;
+*/			margin: 5px;
+			display: inline-block;
+			background-image: url(heart.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			color: rgb(233, 64, 37);
+			padding: 10px;
+			padding-top: 55px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+<div id="one" class="hearts">You can make anyone laugh!</div>
+
+<div id="two" class="hearts">You are spontaneous!</div>
+
+<div id="three" class="hearts">You are crafty!</div>
+
+<div id="four" class="hearts">You are a graphic designer, fashionista, model!</div>
+
+<div id="five" class="hearts">YOU ARE ALWAYS UNIQUELY YOU!</div>
+
+
+	<script type="text/javascript">
+
+		var one = document.getElementById('one');
+
+one.addEventListener("click", function(){
+	console.log('hi');
+	one.style.color="white";
+
+	} )
+
+var two = document.getElementById('two');
+
+	two.addEventListener("click", function(){
+	console.log('hi');
+	two.style.color="white";
+} )
+	var three = document.getElementById('three');
+	three.addEventListener("click", function(){console.log('hi');
+three.style.color="white";
+})
+
+var four = document.getElementById('four');
+	four.addEventListener("click", function(){console.log('hi');
+four.style.color="white";
+})
+
+var five = document.getElementById('five');
+	five.addEventListener("click", function(){console.log('hi');
+five.style.color="white";
+})
+
+		
+		// function makeHearts (){
+		// 	var heart = document.createElement("div");
+		// 	document.body.appendChild(heart);
+		// 	heart.classList.add('hearts');
+
+		// }
+
+		// makeHearts();
+
+		// for (var whatever =0; whatever<5; whatever = whatever+1){makeHearts()}
+		
+	</script>
+
+</body>
+</html>

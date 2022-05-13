@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<style type="text/css">
+		
+		.flowers{
+			height: 175px;
+			width: 175px;
+			background-size: cover;
+			position: relative;
+			display: inline-block;
+		}
+
+		#tulip{
+			background-image: url(tulip.png);
+		}
+
+
+		#rose{
+			background-image: url(rose.png);
+		}
+
+		#hydrangea{ 
+		background-image: url(hydrangea.png); }
+
+		#lily{
+			background-image: url(lily.png);
+		}
+#textbox{
+	height: 300px;
+	width: 300px;
+/*	border: 1px solid black;
+*/	font-size: 30px;
+	color: #ff91a4;
+}
+
+body{
+	background-image: url(field.jpg);
+	background-size: cover;
+}
+
+
+	</style>
+</head>
+<body>
+
+<center>
+<div id=textbox></div>
+	<div id="tulip" class="flowers"></div>
+		<div id="rose" class="flowers"></div>
+	<div id="hydrangea" class="flowers"></div>
+	<div id="lily" class="flowers"></div>
+
+</center>
+
+<script type="text/javascript">
+	
+	tulip.addEventListener("click", function () {
+
+		textbox.innerText="I love how much family means to you! 'Family first!'";
+		textbox.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
+	})
+
+	rose.addEventListener("click", function(){
+
+		textbox.innerText="I love how your beautiful voice cherishes each room!";
+		textbox.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
+	})
+
+	hydrangea.addEventListener("click", function(){
+		textbox.innerText="I love how you make each walk so magical!";
+		textbox.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
+	})
+
+	lily.addEventListener("click", function(){
+		textbox.innerText="I love you almost as much as I love your jam!";
+		textbox.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
+	})
+
+</script>
+
+</body>
+
+</html>
